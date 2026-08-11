@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Kelly, Attorney — Firm AI Use Policy Package</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&family=Sora:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #1A2E20;
+      --key-color: #2E4A3A;
+      --text: #1A2E20;
+      --text-light: #E0E0E0;
+      --card: #ffffff;
+      --link: #0645AD;
+      --link-visited: #0B0080;
+      --shadow: rgba(0, 0, 0, 0.15);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg-dark);
+      color: var(--text);
+      font: normal normal 16px "Sora", Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: var(--link-visited);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .content-outer {
+      max-width: 960px;
+      margin: 20px auto;
+      background: transparent;
+      box-shadow: 0 0 3px var(--shadow);
+      border-radius: 0;
+    }
+
+    .header-outer,
+    .tabs-outer {
+      background: var(--bg-dark);
+      color: #ffffff;
+    }
+
+    .header-inner,
+    .tabs-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 20px 8px;
+      text-align: center;
+    }
+
+    .site-title {
+      margin: 0;
+      font: normal normal 400 32px "Cormorant Garamond", Georgia, serif;
+      letter-spacing: -0.01em;
+      color: #ffffff;
+    }
+
+    .site-title a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .site-title a:hover {
+      text-decoration: underline;
+    }
+
+    .site-nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      padding: 10px 16px 16px;
+    }
+
+    .site-nav a,
+    .site-nav a:visited {
+      color: #ffffff !important;
+      text-decoration: none !important;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 16px;
+      letter-spacing: -0.01em;
+    }
+
+    .site-nav a:hover {
+      text-decoration: underline !important;
+    }
+
+    .main-outer {
+      background: var(--card);
+      border-radius: 20px 20px 0 0;
+      box-shadow: 0 1px 3px var(--shadow);
+      padding: 28px 20px 32px;
+    }
+
+    .main-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    h1, h2, h3 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      letter-spacing: -0.01em;
+      font-weight: 400;
+      color: var(--key-color);
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 0 0 0.5rem;
+    }
+
+    .section-head {
+      font-size: 1.6rem;
+      margin: 2.25rem 0 0.35rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid #e4e4e4;
+    }
+
+    .section-note {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin: 0 0 1.1rem;
+      color: var(--text);
+    }
+
+    .lede {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.125rem;
+      line-height: 1.7;
+      margin: 0 0 1.75rem;
+      color: var(--text);
+    }
+
+    .doc-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 16px;
+    }
+
+    .doc-card {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      background: var(--card);
+      border: 1px solid #dddddd;
+      border-radius: 10px;
+      padding: 18px 20px;
+      transition: box-shadow 0.15s ease;
+    }
+
+    .doc-card:hover {
+      box-shadow: 0 2px 8px var(--shadow);
+    }
+
+    .doc-thumb {
+      flex: 0 0 140px;
+    }
+
+    .doc-thumb img {
+      display: block;
+      width: 140px;
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #e6e6e6;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    }
+
+    .doc-body h2 {
+      margin: 0 0 0.35rem;
+      font-size: 1.5rem;
+    }
+
+    .doc-body p {
+      margin: 0 0 0.85rem;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      line-height: 1.7;
+    }
+
+    .doc-link {
+      display: inline-block;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    .coming {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #6B6B6B;
+    }
+
+    .link-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 0.5rem;
+    }
+
+    .link-list li {
+      padding: 9px 2px;
+      border-bottom: 1px solid #eeeeee;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.08rem;
+      line-height: 1.55;
+    }
+
+    .link-list li:last-child {
+      border-bottom: none;
+    }
+
+    .link-list a {
+      font-weight: 700;
+    }
+
+    .link-list .desc {
+      color: #444444;
+    }
+
+    .footer-outer {
+      background: var(--bg-dark);
+      color: var(--text-light);
+      border-radius: 0 0 20px 20px;
+      padding: 20px;
+      text-align: center;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .footer-outer a,
+    .footer-outer a:visited {
+      color: #A9B8A1;
+    }
+
+    @media screen and (max-width: 640px) {
+      .content-outer {
+        margin: 0;
+      }
+
+      .main-outer {
+        border-radius: 0;
+        padding: 20px 16px 24px;
+      }
+
+      .footer-outer {
+        border-radius: 0;
+      }
+
+      .site-nav {
+        gap: 14px;
+        padding: 10px 12px 14px;
+      }
+
+      h1 {
+        font-size: 1.65rem;
+      }
+
+      .doc-card {
+        flex-direction: column;
+        padding: 14px 16px;
+      }
+
+      .doc-thumb {
+        flex-basis: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="content-outer">
+    <header class="header-outer">
+      <div class="header-inner">
+        <h1 class="site-title"><a href="https://www.law-kelly.com/">John Kelly, Attorney.</a></h1>
+      </div>
+    </header>
+
+    <nav class="tabs-outer" aria-label="Primary">
+      <div class="tabs-inner">
+        <div class="site-nav">
+          <a href="https://my-site-mghouq94-john27153.wix-vibe.com">Home</a>
+          <a href="https://my-site-mghouq94-john27153.wix-vibe.com/practice-areas">Practice Areas</a>
+          <a href="https://my-site-mghouq94-john27153.wix-vibe.com/about">About</a>
+          <a href="https://my-site-mghouq94-john27153.wix-vibe.com/contact">Contact</a>
+          <a href="https://blog.law-kelly.com/">Blog</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main-outer">
+      <div class="main-inner">
+        <h1>Firm AI Use Policy Package</h1>
+        <p class="lede">
+          A model AI use policy for a law firm, with everything a firm needs to adapt and adopt it: the policy itself, the daily-use and court-facing documents, a presentation, per-product implementation guides, and a one-page cost sheet. This is research assistance from one practitioner to another, built from public authorities; the bracketed decisions and final adoption belong to your firm and its counsel. Browse in any order, and bring me your questions: that is what this page is for.
+        </p>
+
+        <h2 class="section-head">Start here</h2>
+        <p class="section-note">Ten minutes of orientation: the video tour, the memo that explains the package, and the page a decision-maker keeps.</p>
+        <ul class="doc-list">
+          <!-- VIDEO CARD: when the walkthrough is filmed, drop the file at
+               videos/walkthrough.mp4 (with an optional poster image) and replace
+               the "coming" line with:
+               <a class="doc-link" href="videos/walkthrough.mp4">Watch the video walkthrough</a> -->
+          <li class="doc-card">
+            <div class="doc-body">
+              <h2>Video Walkthrough</h2>
+              <p>A short guided tour of the package: what each set of documents does, and where to start for your role.</p>
+              <span class="coming">Being filmed; the link will land here shortly.</span>
+            </div>
+          </li>
+          <li class="doc-card">
+            <a class="doc-thumb" href="docs/Cover%20Memo.pdf">
+              <img src="thumbnails/Cover%20Memo-thumb.png" alt="Cover memo first page preview">
+            </a>
+            <div class="doc-body">
+              <h2>Cover Memo</h2>
+              <p>Why the package exists (the State Bar's guidance now treats a written AI policy as a supervisory duty, and six counties have AI local rules), what is in it, and the five tailoring questions a firm answers to make it its own.</p>
+              <a class="doc-link" href="docs/Cover%20Memo.pdf">Open Cover Memo (PDF)</a>
+            </div>
+          </li>
+          <li class="doc-card">
+            <a class="doc-thumb" href="docs/Cost%20and%20Configuration%20Estimates.pdf">
+              <img src="thumbnails/Cost%20and%20Configuration%20Estimates-thumb.png" alt="Cost sheet preview">
+            </a>
+            <div class="doc-body">
+              <h2>Cost and Configuration Estimates</h2>
+              <p>One page: what each product costs per seat, the commitment floors, and how long each takes to stand up. Published prices are marked; press-reported figures are flagged as such.</p>
+              <a class="doc-link" href="docs/Cost%20and%20Configuration%20Estimates.pdf">Open Cost Sheet (PDF)</a>
+            </div>
+          </li>
+        </ul>
+
+        <h2 class="section-head">The policy package</h2>
+        <p class="section-note">The model policy and the documents that make it work day to day: for staff, for court filings, and for firm management.</p>
+        <ul class="doc-list">
+          <li class="doc-card">
+            <a class="doc-thumb" href="docs/Model%20Firm%20AI%20Use%20Policy.pdf">
+              <img src="thumbnails/Model%20Firm%20AI%20Use%20Policy-thumb.png" alt="Model policy first page preview">
+            </a>
+            <div class="doc-body">
+              <h2>Model Firm AI Use Policy</h2>
+              <p>The centerpiece: twelve sections mapped to the State Bar's duty structure, from the Approved Tool List and confidentiality input tiers to citation verification, supervision, billing, and court compliance. Bracketed items mark the firm's decisions.</p>
+              <a class="doc-link" href="docs/Model%20Firm%20AI%20Use%20Policy.pdf">Open Model Policy (PDF)</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="link-list">
+          <li><a href="docs/Staff%20Quick%20Reference.pdf">Staff Quick Reference</a><span class="desc">: the one-page version for daily use.</span></li>
+          <li><a href="docs/Placeholder%20Card.pdf">Placeholder Card</a><span class="desc">: how to strip client identifiers before text reaches any cloud tool.</span></li>
+          <li><a href="docs/Verification%20Prompt%20Pack.pdf">Verification Prompt Pack</a><span class="desc">: copy-and-paste prompts for checking citations and facts.</span></li>
+          <li><a href="docs/Court%20Disclosure%20Kit.pdf">Court Disclosure Kit</a><span class="desc">: the CMC attachment, the per-filing certificate, and the Santa Clara ex parte note.</span></li>
+          <li><a href="docs/County%20Compliance%20Matrix.pdf">County Compliance Matrix</a><span class="desc">: the six counties with AI local rules, verified against the rule texts.</span></li>
+          <li><a href="docs/Where%20the%20Data%20Lives.pdf">Where the Data Lives</a><span class="desc">: chat, add-ins, and harnesses: what actually leaves the building in each.</span></li>
+          <li><a href="docs/Grounding%20Sources.pdf">Grounding Sources</a><span class="desc">: where to get authoritative text, and free case retrieval.</span></li>
+          <li><a href="docs/Adoption%20Notes%20for%20Firm%20Management.pdf">Adoption Notes for Firm Management</a><span class="desc">: insurance, budgets, pricing models, training cadence.</span></li>
+          <li><a href="docs/Authority%20Cite-Check.pdf">Authority Cite-Check</a><span class="desc">: the package's own verification record: every authority checked against source.</span></li>
+        </ul>
+
+        <h2 class="section-head">The presentation</h2>
+        <p class="section-note">Built to walk a partnership through the package in about an hour; I am glad to present it live.</p>
+        <ul class="doc-list">
+          <li class="doc-card">
+            <a class="doc-thumb" href="docs/Presentation%20Deck.pdf">
+              <img src="thumbnails/Presentation%20Deck-thumb.png" alt="Presentation deck cover preview">
+            </a>
+            <div class="doc-body">
+              <h2>Presentation Deck</h2>
+              <p>Twenty-four slides, plain-language edition: chatboxes, add-ins, and harnesses under one written policy, the vendor landscape on the policy's own measures, and the decisions a firm has to make.</p>
+              <a class="doc-link" href="docs/Presentation%20Deck.pdf">Open Presentation Deck (PDF)</a>
+            </div>
+          </li>
+          <li class="doc-card">
+            <a class="doc-thumb" href="docs/Glossary.pdf">
+              <img src="thumbnails/Glossary-thumb.png" alt="Glossary first page preview">
+            </a>
+            <div class="doc-body">
+              <h2>Glossary</h2>
+              <p>Every term of art in these materials, defined in plain language: from the Approved Tool List and input tiers to zero data retention and covered models. The reading aid for everything else on this page.</p>
+              <a class="doc-link" href="docs/Glossary.pdf">Open Glossary (PDF)</a>
+            </div>
+          </li>
+        </ul>
+
+        <h2 class="section-head">The product policy documents</h2>
+        <p class="section-note">The model policy implemented for each product a firm is likely to consider: what it is, the required setup, what may go in, and the vendor's actual terms, graded by whether they bind. Start with the how-to-use page.</p>
+        <ul class="link-list">
+          <li><a href="docs/How%20to%20Use%20the%20Product%20Policy%20Documents.pdf">How to Use the Product Policy Documents</a><span class="desc">: the index: what the set is, the status labels, and the reading order.</span></li>
+          <li><a href="docs/Product%20Policy%20-%20ChatGPT%20Business.pdf">ChatGPT Business</a><span class="desc">: chatbox; ready to adopt.</span></li>
+          <li><a href="docs/Product%20Policy%20-%20Claude%20Team.pdf">Claude Team</a><span class="desc">: chatbox; ready to adopt.</span></li>
+          <li><a href="docs/Product%20Policy%20-%20Microsoft%20365%20Copilot.pdf">Microsoft 365 Copilot</a><span class="desc">: add-in suite; ready to adopt, with the tenant audit first.</span></li>
+          <li><a href="docs/Product%20Policy%20-%20Cursor%20with%20Privacy%20Mode.pdf">Cursor with Privacy Mode</a><span class="desc">: harness; ready to adopt.</span></li>
+          <li><a href="docs/Product%20Policy%20-%20Embedded%20AI%20Features.pdf">Embedded AI Features</a><span class="desc">: the cross-product card for AI that arrives inside other software.</span></li>
+          <li><a href="docs/Product%20Policy%20-%20CoCounsel.pdf">CoCounsel</a><span class="desc">: platform; conditional on contract terms.</span></li>
+          <li><a href="docs/Product%20Policy%20-%20Lexis+%20AI%20Protege.pdf">Lexis+ AI Protege</a><span class="desc">: platform; conditional and restricted.</span></li>
+          <li><a href="docs/Product%20Policy%20-%20Vincent.pdf">Vincent (vLex)</a><span class="desc">: platform; not approved on public terms, and why.</span></li>
+          <li><a href="docs/Product%20Policy%20-%20Harvey.pdf">Harvey</a><span class="desc">: platform; contract-verified.</span></li>
+          <li><a href="docs/Product%20Policy%20-%20Legora.pdf">Legora</a><span class="desc">: platform; contract-verified.</span></li>
+        </ul>
+
+        <h2 class="section-head">Questions</h2>
+        <p class="section-note">
+          None of this is meant to be absorbed in one sitting. If a document raises a question, or you want the presentation live for your partners, <a href="mailto:office@law-kelly.com">write me</a> or call. The five tailoring questions in the cover memo are the natural place to start, whenever you are ready.
+        </p>
+      </div>
+    </main>
+
+    <footer class="footer-outer">
+      <p>
+        John Kelly, Attorney<br>
+        <a href="mailto:office@law-kelly.com">office@law-kelly.com</a> ·
+        <a href="tel:+17079356100">(707) 935-6100</a><br>
+        Sonoma, California
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
